@@ -1,6 +1,6 @@
 " wwwsearch - Search WWW easily from Vim
-" Version: 0.0.1
-" Copyright (C) 2009 kana <http://whileimautomaton.net/>
+" Version: 0.0.2
+" Copyright (C) 2010 kana <http://whileimautomaton.net/>
 " License: MIT license  {{{
 "     Permission is hereby granted, free of charge, to any person obtaining
 "     a copy of this software and associated documentation files (the
@@ -161,7 +161,7 @@ function! s:default_command_to_open_uri()  "{{{2
   elseif has('win32') || has('win64')
     return 'start rundll32 url.dll,FileProtocolHandler {uri}'
   else
-    return ''
+    return 'xdg-open {uri}'
   endif
 endfunction
 

@@ -1,8 +1,8 @@
 *wwwsearch.txt*	Search WWW easily from Vim
 
-Version 0.0.1
+Version 0.0.2
 Script ID: 2785
-Copyright (C) 2009 kana <http://whileimautomaton.net/>
+Copyright (C) 2010 kana <http://whileimautomaton.net/>
 License: MIT license  {{{
     Permission is hereby granted, free of charge, to any person obtaining
     a copy of this software and associated documentation files (the
@@ -219,10 +219,7 @@ g:wwwsearch_command_to_open_uri		     *g:wwwsearch_command_to_open_uri*
 	  For Microsoft Windows:
 	    "start rundll32 url.dll,FileProtocolHandler {uri}"
 	  For other environments:
-	    ""
-
-	You have to set an appropriate value if you don't use Mac OS X nor
-	Microsoft Windows.
+	    "xdg-open {uri}"
 
 
 
